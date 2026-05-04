@@ -1,0 +1,21 @@
+{
+  "name": "react-dashboard-ui",
+  "version": "1.0.0",
+  "description": "React End to End by Niraj Kumar",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "Niraj"
+  ],
+  "author": "Niraj Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.16.4"
+  },
+  "dependencies": {
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5"
+  }
+}
