@@ -1,26 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-// creating nested React element 
-{/* <div id = "parent">
-    <div id = "child">
-        <h1>
-        </h1>
-        <h2></h2>
-    </div>
-     <div id = "child2">
-        <h1>
-        </h1>
-        <h2></h2>
-    </div>
-</div> */}
-
-
-
-// const heading = React.createElement("h1", {id:"headings"}, "Hello Mr Kumar");
-
-// console.log(heading);
-
 const parent = React.createElement(
     "div", {id:"parent"}, [
     React.createElement(
