@@ -1,21 +1,28 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-const parent = React.createElement(
-    "div", {id:"parent"}, [
-    React.createElement(
-       "div", {id:"child1", key: "child1"},[
-        React.createElement("h1", {key: "h1-1"}, "Hello Niraj"),
-        React.createElement("h2", {key: "h2-1"}, "Hello Niraj kaise ho"),
-        ]
-    ),
-    React.createElement(        
-        "div", {id:"child2", key: "child2"},[
-        React.createElement("h1", {key: "h1-2"}, "Hello Niraj"),
-        React.createElement("h2", {key: "h2-2"}, "Hello Niraj kaise ho"),
-    ]),
-])
+// React.createElement => it is a java script object => not an html element
+// render method converts this js object into htmml emlement and place it to the root
+const heading = React.createElement("h1",{id:"heading"},"Hii Everyone welcome");
+
+const jsxheading = (
+    <h1 id = "heading">Hii wlecome</h1>
+)
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+console.log(root);
 
-root.render(parent);
+// functional component
+
+const HeadingComponent = () =>{
+    return(
+        <div id = "container">
+            {100+200}
+            <h1>Hello bro</h1>
+        </div>
+    )
+        
+    
+}
+
+root.render(<HeadingComponent />);
